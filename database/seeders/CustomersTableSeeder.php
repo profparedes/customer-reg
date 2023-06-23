@@ -16,7 +16,7 @@ class CustomersTableSeeder extends Seeder
 
         Customer::truncate();
 
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 30; $i++) {
             list($state, $city) = $this->generateRandomStateAndCity();
             Customer::create([
                 'cpf'         => $this->generateRandomCpf(),
